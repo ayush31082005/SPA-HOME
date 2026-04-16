@@ -7,7 +7,7 @@ const app = express();
 // ✅ allowed origins
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://spa-home.vercel.app"
+    "https://spa-home.vercel.app/"
 ];
 
 app.use(
