@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="mt-4 space-y-3 text-sm text-text">
               <p className="flex items-start gap-3"><MapPin size={18} className="mt-0.5 text-secondary" />Delhi NCR, India</p>
               <p className="flex items-start gap-3"><Phone size={18} className="mt-0.5 text-secondary" />+91 83840 73716</p>
-              <p className="flex items-start gap-3"><Mail size={18} className="mt-0.5 text-secondary" />pkspsh1ps@gmail.com</p>
+              {/* <p className="flex items-start gap-3"><Mail size={18} className="mt-0.5 text-secondary" />pkspsh1ps@gmail.com</p> */}
             </div>
           </div>
         </div>
