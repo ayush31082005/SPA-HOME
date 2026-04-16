@@ -66,7 +66,7 @@ export default function BookingFormSection() {
     <section id="booking" className="section-space">
       <Container>
         <SectionHeading
-          label="Book Your Spa Session"
+          label="Book Your Spa Male therapist"
           title="Fill the form and get confirmation within 5–10 minutes"
           description="Your details are safe and confidential. No spam, quick response, and verified service support."
         />
