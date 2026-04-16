@@ -32,7 +32,7 @@ export default function BookingFormSection() {
     event.preventDefault();
 
     try {
-      const res = await fetch("https://spa-home.onrender.com/api/bookings/create", {
+      const res = await fetch("http://localhost:5000/api/bookings/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
