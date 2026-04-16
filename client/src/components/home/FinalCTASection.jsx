@@ -23,9 +23,9 @@ export default function FinalCTASection() {
               <PrimaryButton onClick={() => scrollToSection("booking")} className="w-full sm:w-auto">
                 <span className="inline-flex items-center justify-center gap-2"><FileText size={18} />Fill Form</span>
               </PrimaryButton>
-              <SecondaryButton onClick={() => window.location.href = callLink} className="w-full sm:w-auto">
+              {/* <SecondaryButton onClick={() => window.location.href = callLink} className="w-full sm:w-auto">
                 <span className="inline-flex items-center justify-center gap-2"><PhoneCall size={18} />Call Now</span>
-              </SecondaryButton>
+              </SecondaryButton> */}
               <SecondaryButton onClick={() => window.open(WHATSAPP_LINK, "_blank")} className="w-full sm:w-auto">
                 <span className="inline-flex items-center justify-center gap-2"><MessageCircle size={18} />WhatsApp Booking</span>
               </SecondaryButton>
