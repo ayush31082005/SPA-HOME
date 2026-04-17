@@ -18,9 +18,14 @@ app.use(
             // allow requests with no origin (Postman, mobile apps)
             if (!origin) return callback(null, true);
 
-            if (allowedOrigins.includes(origin)) {
+            const isAllowed = allowedOrigins.includes(origin) || 
+                              origin.includes("spa-home.vercel.app") || 
+                              origin.includes("localhost");
+
+            if (isAllowed) {
                 callback(null, true);
             } else {
+                console.error(`CORS Blocked for origin: ${origin}`);
                 callback(new Error("Not allowed by CORS"));
             }
         },
