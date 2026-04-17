@@ -7,7 +7,7 @@ const app = express();
 // ✅ allowed origins
 const allowedOrigins = [
     "http://localhost:5173",
-    process.env.FRONTEND_URL, // e.g., https://spa-home.vercel.app
+    process.env.FRONTEND_URL?.replace(/\/$/, ""),
 ].filter(Boolean);
 
 app.use(
